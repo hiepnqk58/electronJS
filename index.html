@@ -1,0 +1,34 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YARA Rule Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>YARA Rule Generator</h1>
+      <button>Tạo luật YARA</button>
+      <button>Tạo WhiteList DB</button>
+      <button>Xuất WhiteList DB</button>
+
+      <h2>Tạo WhiteList Database</h2>
+      <label for="folderPath">Chọn thư mục chứa tệp sách:</label>
+      <input
+        type="text"
+        id="folderPath"
+        placeholder="C:/Users/ZhongXina/Desktop/NewFolder"
+      />
+      <button>Duyệt</button>
+
+      <label for="dbName">Tên cơ sở dữ liệu:</label>
+      <input type="text" id="dbName" placeholder="123ca" />
+
+      <button>Tạo WhiteList DB</button>
+      <p>Hoàn thành thành công. Luật YARA đã được tạo.</p>
+    </div>
+    <script src="renderer.js"></script>
+  </body>
+</html>
